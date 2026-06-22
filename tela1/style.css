@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html {
+        width: 100%;
+        font-family: 'sendday', sans-serif;
+
+}
+
+
+.app-screen {
+    width: 100vw;
+    min-height: 100vh; 
+    
+    background-image: url('image/fundo2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    
+    display: flex;
+    
+    padding: 40px 16px; 
+    user-select: none; 
+    -webkit-user-select: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    margin: auto; 
+    
+    background-color: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    
+    width: 100%;
+    max-width: 900px; 
+    
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+textarea {
+    min-height: 45px; 
+    resize: none;
+}
+
+.email{
+    display: flex;
+    gap: 16px;
+
+}
+
+h2 {
+    color: #6200ea;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'sendday', sans-serif;
+}
+
+
+
+
+input, textarea, button {
+    width: 100%;
+    padding: 16px; 
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px; 
+}
+
+
+
+button {
+    background-color: #6200ea;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #4a00b0; 
+}
+
+@media (orientation: portrait) { 
+    .email {
+        flex-direction: column;
+    }
+}   
